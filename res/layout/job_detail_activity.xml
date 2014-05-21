@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3" >
+
+    <LinearLayout
+        android:id="@+id/layout_header"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <ImageButton
+            android:id="@+id/image_btn_jobdetail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:background="@null"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="50dip"
+            android:text="@string/tv_details_closejob"
+            android:textSize="20dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyout_job_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_header"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:singleLine="true"
+                android:text="Job Name      :"
+                android:textAppearance="@android:style/TextAppearance.Inverse"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tv_jobdetail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job name here "
+                android:textAppearance="@android:style/TextAppearance.Inverse"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:singleLine="true"
+                android:text="Job Type        :"
+                android:textAppearance="@android:style/TextAppearance.Inverse"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tv_jobdetail_jobtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Type here "
+                android:textAppearance="@android:style/TextAppearance.Inverse"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:singleLine="true"
+                android:text="Job Number   :"
+                android:textAppearance="@android:style/TextAppearance.Inverse"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tv_jobdetail_jobnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job numberber here "
+                android:textAppearance="@android:style/TextAppearance.Inverse"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_footer"
+        android:layout_below="@+id/lyout_job_info"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/iv_jobdetails_one"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/iv_jobdetails_two"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/iv_jobdetails_three"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+id/btn_jobdetail_take_snap"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_account_take_pic" />
+
+        <Button
+            android:id="@+id/btn_jobdetail_close_job"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_jobdetail_close_job" />
+    </LinearLayout>
+
+</RelativeLayout>

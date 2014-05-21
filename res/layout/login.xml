@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dip" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/tv_login"
+        android:textSize="50dip"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_usr_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:hint="@string/hint_username"
+        android:inputType="number" />
+
+    <EditText
+          android:id="@+id/et_usr_pass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:hint="@string/hint_pass"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/chkbox_savepass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/chk_savePass" 
+        android:layout_marginTop="10dip"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="@string/btn_login" />
+
+</LinearLayout>
